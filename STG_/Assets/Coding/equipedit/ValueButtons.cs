@@ -112,8 +112,6 @@ public class ValueButtons : MonoBehaviour {
         // = new BarrageAdmin();
         bc.setData(vbul, vwav, vbar,0,
              getBullet(),null);
-        play.SetActive(true);
-       
     }
 
     public void UPGrade(int tag)
@@ -271,6 +269,7 @@ public class ValueButtons : MonoBehaviour {
 	void Start () {
 
         BarrageNumber = pt.Load_i(pt.pedBEditing);
+        Debug.Log(BarrageNumber);
         gbe = new getBarrageEditData(BarrageNumber);
         //PlayerPrefs.DeleteAll();
         vbul = new float[6];

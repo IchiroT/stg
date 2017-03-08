@@ -60,12 +60,12 @@ public class getBarrageEditData
     public float get(int g,int v)
     {
         float ret = pt.Load_f(
-              pt.pedB + pt.pedBgr[g] + pt.pedBva[v] + BarrageNunber);
+              pt.pedBtag + pt.pedBgr[g] + pt.pedBva[v] + BarrageNunber);
         return ret;
     }
     public void set(int g,int v, float val)
     {
         pt.Save_f(
-             pt.pedB + pt.pedBgr[g] + pt.pedBva[v] + BarrageNunber, val);
+             pt.pedBtag + pt.pedBgr[g] + pt.pedBva[v] + BarrageNunber, val);
     }
 }

@@ -12,7 +12,7 @@ public class PlayerStates : MonoBehaviour {
         pd = new PlayerData();
         pd.LoadData();
 
-        getBarrageEditData gb = new getBarrageEditData(p.Load_i(p.pbarrage));
+        getBarrageEditData gb = new getBarrageEditData(p.Load_i(p.pedBEditing));
 
         PlayerBarrageControll pb = gameObject.AddComponent<PlayerBarrageControll>();
 

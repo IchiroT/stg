@@ -16,7 +16,7 @@ public class PrefsTag
     public string stageScore = "stagelatestgetscore";
 
     public string pedBEditing = "EditingNumber";
-    public string pedB = "tageditingplaser";
+    public string pedBtag = "tageditingplaser";
 
     public string scene_EquipEdit="EquipEdit";
     public string scene_StageSample = "StageSample";
@@ -39,7 +39,7 @@ public class PrefsTag
         "times","inter","rotate","speed","x","y"
     };
 
-    public string pbarrage = "usebarrage";
+    //public string pbarrage = "usebarrage";
 
     public string sselectName = "stageselected";
 

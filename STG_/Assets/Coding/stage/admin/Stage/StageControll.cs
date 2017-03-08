@@ -17,7 +17,7 @@ public class StageControll : MonoBehaviour
 
 
         difficulity = p.Load_f(p.difmine);
-        if (difficulity == -1) difficulity = 1;
+        if (difficulity == 0) difficulity = 1;
         AudioSource audio = gameObject.AddComponent<AudioSource>();
         audio.clip = sa.audio;
         audio.Play();

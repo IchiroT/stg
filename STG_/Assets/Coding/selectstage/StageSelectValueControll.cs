@@ -26,6 +26,7 @@ public class StageSelectValueControll : MonoBehaviour {
 
         p.Save_i(p.difmine, mdif);
         p.Save_f(p.pwei, wei);
+        p.Save_i(p.pedBEditing, strage);
         Application.LoadLevel("StageSample");
     }
 
@@ -95,8 +96,9 @@ public class StageSelectValueControll : MonoBehaviour {
 	void Start () {
         mLv = p.Load_i(p.plv);
         mdif = p.Load_i(p.pdiff);
+        if (mdif == 0) mdif = 1;
         wei = p.Load_f(p.pwei);
-        strage = p.Load_i(p.pbarrage);
+        strage = p.Load_i(p.pedBEditing);
         setValue();
         ViewUpdata();
 		

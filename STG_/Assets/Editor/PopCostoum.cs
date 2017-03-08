@@ -19,8 +19,14 @@ public class PopCostoum : Editor
       
         }
 
+        /*a.enemyAdmin = new Object[a.size];
+        a.EnemyPosition = new Vector2[a.size];
+        a.EnemyRotate = new float[a.size];
+        a.PopInterval = new float[a.size];*/
         for (int i = 0; i < a.size; i++)
-        {EditorGUILayout.LabelField("popenemy:", i.ToString());
+        {
+          
+            EditorGUILayout.LabelField("popenemy:", i.ToString());
             a.enemyAdmin[i] = EditorGUILayout.ObjectField("enemyadmin",a.enemyAdmin[i], typeof(EnemyAdmin), true);
             a.EnemyPosition[i].x = EditorGUILayout.Slider("posi_x",a.EnemyPosition[i].x, -6, 6);
             a.EnemyPosition[i].y = EditorGUILayout.Slider("posi_y",a.EnemyPosition[i].y, -6, 6);
