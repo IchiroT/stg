@@ -25,13 +25,14 @@ public class PopControll : MonoBehaviour
     {
         elapse += Time.deltaTime;
 
-        if (elapse > getInterval() && PopCounter < pa.enemyAdmin.Length)
+        if (elapse > getInterval() && PopCounter < pa.size)
         {
+
             elapse = 0;
             CreateEenmy();
             PopCounter++;
         }
-        else if (transform.childCount <= 1&&PopCounter>=pa.enemyAdmin.Length)
+        else if (transform.childCount <= 1&&PopCounter>=pa.size)
         {
             //gameObject.SetActive(false);
             DestroyImmediate(this);
@@ -80,17 +81,17 @@ public class PopControll : MonoBehaviour
     {
         int num = PopCounter;
         Vector2 ret = new Vector2(0, 0);
-        if (PopCounter < pa.EnemyPosition.Length)
+        if (PopCounter < pa.size)
         {
             ret = pa.EnemyPosition[num];
         }
-        else if (pa.EnemyPosition.Length == 0)
+        else if (pa.size == 0)
         {
 
         }
         else
         {
-            num = pa.EnemyPosition.Length - 1;
+            num = pa.size - 1;
             ret = pa.EnemyPosition[num];
         }
         return ret;
@@ -99,17 +100,17 @@ public class PopControll : MonoBehaviour
     {
         int num = PopCounter;
         float ret = 0;
-        if (PopCounter < pa.EnemyRotate.Length)
+        if (PopCounter < pa.size)
         {
             ret = pa.EnemyRotate[num];
         }
-        else if (pa.EnemyRotate.Length == 0)
+        else if (pa.size == 0)
         {
 
         }
         else
         {
-            num = pa.EnemyRotate.Length - 1;
+            num = pa.size - 1;
             ret = pa.EnemyRotate[num];
         }
         return ret;
@@ -118,17 +119,17 @@ public class PopControll : MonoBehaviour
     {
         int num = PopCounter;
         float ret = 0;
-        if (PopCounter < pa.PopInterval.Length)
+        if (PopCounter < pa.size)
         {
             ret = pa.PopInterval[num];
         }
-        else if (pa.PopInterval.Length == 0)
+        else if (pa.size == 0)
         {
 
         }
         else
         {
-            num = pa.PopInterval.Length - 1;
+            num = pa.size - 1;
             ret = pa.PopInterval[num];
         }
         return ret;

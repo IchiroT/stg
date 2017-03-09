@@ -27,7 +27,7 @@ public class EnemyStatesControll : MonoBehaviour {
             }
             else
             {
-                GetComponent<StageControll>().scoreadd(hpmax * atk * spd);
+                transform.parent.GetComponent<StageControll>().scoreadd(hpmax * atk * spd);
                 Destroy(gameObject);
             }
 

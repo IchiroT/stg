@@ -22,7 +22,7 @@ public class PlayerStates : MonoBehaviour {
         Debug.Log(val+"obj");
 
         pb.setData(gb.getvals(0), gb.getvals(1), gb.getvals(2), pd.atk,
-             gb.getBullet(),gb.getHitEffect()//buf
+             pd.bullet,pd.hitEffect//buf
             );
 
         EnemyStatesControll esc = gameObject.AddComponent<EnemyStatesControll>();

@@ -7,6 +7,7 @@ public class PlayerData
     public float atk;
     public float hp;
     public GameObject hitEffect;
+    public GameObject bullet;
         
 
     public void LoadData()
@@ -20,9 +21,12 @@ public class PlayerData
         if (wei == -1) wei = 0.5f;
         atk = lv * wei+1;
         hp = lv * (1 - wei)+1;
-        string phit = pt.Load_s(pt.pChHitEffect);
-        if (phit == "-1") phit = "ef_baku";
-        hitEffect = rt.getResourceObject(rt.HitEffect, phit);
+        int phit = pt.Load_i(pt.pChHitEffect);
+        GameObject[] efs = Resources.LoadAll<GameObject>(rt.HitEffect);
+        hitEffect = efs[phit];
+        phit = pt.Load_i(pt.pUseBullet);
+        efs = Resources.LoadAll<GameObject>(rt.Bullet);
+        bullet = efs[phit];
 
     }
 

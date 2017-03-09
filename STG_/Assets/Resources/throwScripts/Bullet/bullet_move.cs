@@ -37,6 +37,7 @@ public class bullet_move : MonoBehaviour {
                 collision.gameObject.GetComponent<EnemyStatesControll>();
             esc.damage(atk);
             GameObject on= Instantiate<GameObject>(effectExp);
+            on.AddComponent<AnimeOnce>();
             on.transform.position = transform.position;
 
             Destroy(gameObject);

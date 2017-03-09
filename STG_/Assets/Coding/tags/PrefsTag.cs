@@ -26,7 +26,7 @@ public class PrefsTag
     //public string pUseScriptAmount = "plyaerscriptamount";
     public string pUseBullet = "playerUseBullet";
     public string pUseTexture = "playerusedTexture";
-    public string pHiteffect = "playerHitEffect";
+    //public string pHiteffect = "playerHitEffect";
     public string pChHitEffect = "playerHitCharaeffect";
 
 

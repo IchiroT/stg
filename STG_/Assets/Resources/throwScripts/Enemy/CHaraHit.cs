@@ -20,8 +20,9 @@ public class CHaraHit : MonoBehaviour {
             escme = transform.GetComponent<EnemyStatesControll>();
             esc = collision.gameObject.GetComponent<EnemyStatesControll>();
             esc.damage( escme.atk * 5);
-  on = Instantiate<GameObject>(escme.hiteffect);
-                on.transform.position = collision.transform.position;
+            on = Instantiate<GameObject>(escme.hiteffect);
+            on.transform.position = collision.transform.position;
+            on.AddComponent<AnimeOnce>();
         }
     }
     EnemyStatesControll escme;

@@ -99,7 +99,6 @@
     <Compile Include="Assets\Coding\stage\admin\Player\PlayerPoper.cs" />
     <Compile Include="Assets\Coding\stage\admin\Player\States\PlayerData.cs" />
     <Compile Include="Assets\Coding\stage\admin\Player\States\PlayerStates.cs" />
-    <Compile Include="Assets\Coding\stage\admin\Player\TestDatamake.cs" />
     <Compile Include="Assets\Coding\stage\admin\Pop\PopAdmin.cs" />
     <Compile Include="Assets\Coding\stage\admin\Pop\PopControll.cs" />
     <Compile Include="Assets\Coding\stage\admin\Stage\StageAdmin.cs" />

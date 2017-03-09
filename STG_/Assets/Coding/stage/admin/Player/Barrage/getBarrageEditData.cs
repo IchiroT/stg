@@ -16,36 +16,8 @@ public class getBarrageEditData
    
   
 
-    public GameObject getBullet()
-    {
-        GameObject ret = null;
-        string pbul = pt.Load_s(pt.pUseBullet);
-        if (pbul == "-1") pbul = "bu_0";
-        ret = rt.getResourceObject(rt.Bullet, pbul);
-
-
-        return ret;
-    }
-
-    public GameObject getHitEffect()
-    {
-        GameObject ret = null;
-        string pbul = pt.Load_s(pt.pHiteffect);
-        if (pbul == "-1") pbul = "ef_baku";
-        ret = rt.getResourceObject("object/effect/", pbul);
-        Debug.Log(pbul);
-        return ret;
-    }
-
-    public Sprite texrureGet()
-    {
-        Sprite ret = null;
-
-
-
-        return ret;
-
-    }
+ 
+ 
 
     public float[] getvals(int g)
     {
