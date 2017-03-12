@@ -82,6 +82,7 @@
     <Compile Include="Assets\Coding\event\eventAdmin.cs" />
     <Compile Include="Assets\Coding\event\eventSecnceControll.cs" />
     <Compile Include="Assets\Coding\score\ScoreControll.cs" />
+    <Compile Include="Assets\Coding\selectstage\StageElementScr.cs" />
     <Compile Include="Assets\Coding\selectstage\StageSelectValueControll.cs" />
     <Compile Include="Assets\Coding\stage\admin\Barrage\BarrageAdmin.cs" />
     <Compile Include="Assets\Coding\stage\admin\Barrage\Barrage_control2.cs" />

@@ -10,11 +10,13 @@ public class StageControll : MonoBehaviour
     public float difficulity;
     PrefsTag p = new PrefsTag();
     public float score = 0;
+    public int num;
 
     // Use this for initialization
     void Start()
     {
-
+       num = p.Load_i(p.sselectName);
+        sa = Resources.LoadAll<StageAdmin>("scriptable/")[num];
 
         difficulity = p.Load_f(p.difmine);
         if (difficulity == 0) difficulity = 1;

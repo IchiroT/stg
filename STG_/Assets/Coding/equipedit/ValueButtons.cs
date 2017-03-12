@@ -45,8 +45,7 @@ public class ValueButtons : MonoBehaviour {
     public void effectTextureChanged()
     {
         int which = (int)effectTexture.value;
-        pt.Save_s(pt.pHiteffect, effects[which].name);
-        Debug.Log(effects[which].name);
+        pt.Save_s(pt.pChHitEffect, effects[which].name);
     }
 
     public void EnemyTextureChanged()

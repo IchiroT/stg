@@ -21,12 +21,10 @@ public class PlayerData
         if (wei == -1) wei = 0.5f;
         atk = lv * wei+1;
         hp = lv * (1 - wei)+1;
-        int phit = pt.Load_i(pt.pChHitEffect);
-        GameObject[] efs = Resources.LoadAll<GameObject>(rt.HitEffect);
-        hitEffect = efs[phit];
-        phit = pt.Load_i(pt.pUseBullet);
-        efs = Resources.LoadAll<GameObject>(rt.Bullet);
-        bullet = efs[phit];
+        string phit = pt.Load_s(pt.pChHitEffect);
+        hitEffect= rt.getResourceObject(rt.HitEffect, phit);
+        phit = pt.Load_s(pt.pUseBullet);
+        bullet = rt.getResourceObject(rt.Bullet, phit);
 
     }
 

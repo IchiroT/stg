@@ -9,6 +9,8 @@ public class StageSelectValueControll : MonoBehaviour {
     public Text tBarrage;
     public Text tDifficulity;
     public Slider weight;
+    public GameObject cont;
+    public GameObject se;
 
     public int mLv;
     public float wei;
@@ -20,6 +22,21 @@ public class StageSelectValueControll : MonoBehaviour {
 
     float atk, def;
     //int difficulity;
+
+        public void setStage()
+    {
+        StageAdmin[] sas = Resources.LoadAll<StageAdmin>("scriptable/stage/");
+        GameObject buf;
+        float width = se.GetComponent<RectTransform>().anchoredPosition.x;
+        for(int i = 0; i < sas.Length; i++)
+        {
+            buf = Instantiate(se);
+            buf.GetComponent<StageElementScr>().number = i;
+            buf.transform.SetParent(cont.GetComponent<RectTransform>(), false);
+
+            buf.name = sas[i].name;
+        }
+    }
 
     public void goStage(string name)
     {
@@ -101,6 +118,9 @@ public class StageSelectValueControll : MonoBehaviour {
         strage = p.Load_i(p.pedBEditing);
         setValue();
         ViewUpdata();
+
+        //se = Resources.Load<GameObject>("stageselect/");
+        setStage();
 		
 	}
 	
